@@ -1,0 +1,264 @@
+@font-face {
+    font-family: btitr;
+    src: url(./fonts/o.ttf);
+}
+
+.calculator-container {
+    margin: auto;
+    width: 30%;
+    padding: 10px 10px 0px;
+    border: gray solid 1px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+    box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+    height: 450px;
+    background-color: #fbfbfb;
+}
+
+
+
+.calculator-row {
+    margin: auto !important;
+    display: inline-block;
+    width: 100%;
+    padding: 2px 5px;
+}
+
+.calculator-global {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    background-color: #f6f2f3;
+    float: left;
+    width: 23.5%;
+    margin: 0 2px;
+
+    /*border: 1px solid #000;*/
+
+}
+
+.operator {
+    background-color: #ffd500 !important;
+    color: white !important;
+}
+
+.operator:hover {
+    background-color: #ffe000 !important;
+}
+
+.open-parentheses:hover,
+.close-parentheses:hover {
+    background: #e2e2e2 !important;
+    color: black;
+}
+
+.numbers:hover {
+    background: #e2e2e2 !important;
+    color: black;
+}
+
+.calculator-row .left,
+.calculator-row .right {
+    float: left;
+    position: relative;
+}
+
+.left {
+    width: 74%;
+}
+
+.right {
+    width: 24%;
+}
+
+.calculator-big {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 48%;
+    margin: 0 2px;
+}
+
+.calculator-small {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 31.5%;
+    margin: 0 2px;
+}
+
+.calculator-plus {
+    height: 105px;
+    width: 100%;
+}
+
+.calculator-green {
+    background-color: #00ac69;
+}
+
+.calculator-green:hover {
+    background-color: #00cb85;
+}
+
+.calculator-red {
+    background-color: #F50258;
+}
+
+.calculator-redd {
+    background-color: #ffeae2;
+    color: #ff341d !important;
+}
+
+.calculator-redd:hover {
+    background-color: #ffd9d2 !important;
+    color: #ff341d !important;
+}
+
+.calculator-red:hover {
+    background-color: crimson;
+}
+
+.calculator-grey {
+    background-color: #F2F2F2;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.top-margin {
+    margin-top: 4px;
+}
+
+.equation {
+    margin: auto;
+    width: 99%;
+    border: 1px whitesmoke solid;
+    border-radius: 2px;
+    display: inline-block;
+    background: white;
+    height: 70px !important;
+    padding-top: 15px;
+    text-align: center;
+    vertical-align: center;
+
+}
+
+
+.coefficient-output {
+    margin-left: 8px;
+    width: 23%;
+    height: 50px;
+    background: white;
+    float: left;
+    border: 1px lightgray solid;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: center;
+    overflow: auto;
+    padding-top: 5px;
+}
+
+.equation-span {
+    margin: 10px 0px 0px 6px;
+    display: block;
+    float: left;
+}
+
+.coef {
+    opacity: 0;
+    display: none;
+}
+
+.cout {
+    font-size: 0.85em;
+}
+
+.abc {
+    font-size: 1em !important;
+}
+
+.equation-result p {
+    font-size: 1.8em;
+    display: block;
+
+    margin-top: 5px;
+
+}
+
+.equation-result {
+    border: limegreen 2px solid;
+    border-radius: 5px;
+    width: 31%;
+    margin: auto;
+    margin-top: 10px;
+    -webkit-box-shadow: 1px 1px 4px 0px lawngreen;
+    -moz-box-shadow: 1px 1px 4px 0px lawngreen;
+    box-shadow: 1px 1px 4px 0px lawngreen;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+}
+
+#loadingGif {
+    position: absolute;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+    display: none;
+}
+
+.Sol {
+
+    font-size: 1.2em !important;
+    ;
+    background: limegreen;
+    color: white;
+    width: 93.5%;
+
+    float: right;
+    direction: rtl;
+    text-align: right;
+    padding: 10px 20px 10px 20px;
+    font-family: btitr;
+}
+
+
+@media only screen and (min-width : 300px) and (max-width : 800px) {
+    .calculator-container {
+        width: 90%;
+        display: block;
+    }
+
+    .equation-result {
+        width: 90%;
+        display: block;
+    }
+}
+
+@media only screen and (min-width : 801px) and (max-width : 1300px) {
+    .calculator-container {
+        width: 60%;
+        display: block;
+    }
+
+    .equation-result {
+        width: 60%;
+        display: block;
+    }
+
+}
